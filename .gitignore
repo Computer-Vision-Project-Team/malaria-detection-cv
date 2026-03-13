@@ -1,3 +1,15 @@
+# Ignore the dataset images
+data/*
+!data/.gitkeep
+
+# Ignore large saved Keras models (share the .h5 file via Google Drive or Plymouth OneDrive instead)
+*.h5
+*.keras
+
+# Ignore Mac/Windows system files
+.DS_Store
+Thumbs.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
