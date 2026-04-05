@@ -1,13 +1,21 @@
+"""Image processing utilities for malaria cell classification.
+
+Contains the Gaussian blur preprocessing function used by ImageDataGenerator
+(Method 1: Image Enhancement) and parasite segmentation for visualization.
+"""
+
 import cv2
 import numpy as np
 
-# Gaussian Blur 
-def apply_gaussian_blur(image):
-    return cv2.GaussianBlur(image, (3, 3), 0)
+
+def apply_gaussian_blur(img):
+    """Apply a 3x3 Gaussian blur to preserve sharp parasite edges."""
+    blurred_img = cv2.GaussianBlur(img, (3, 3), 0)
+    return blurred_img
 
 
-# Segmentation for infected cells
 def segment_parasite(image):
+    """Segment infected cells by detecting purple parasite regions."""
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
 
     # Purple parasite color range

@@ -1,0 +1,1 @@
+python src/train.py --curve-out models/my_curve.pngpython-3.12
