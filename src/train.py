@@ -1,9 +1,3 @@
-"""Train a MobileNetV2 transfer learning model for malaria cell classification.
-
-Mirrors the notebook's model architecture, compilation, callbacks, and
-training loop exactly.
-"""
-
 import os
 import matplotlib.pyplot as plt
 import tensorflow as tf

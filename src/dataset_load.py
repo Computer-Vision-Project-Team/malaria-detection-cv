@@ -1,9 +1,3 @@
-"""Dataset loading and splitting utilities for malaria classification.
-
-Mirrors the notebook cells for downloading the NIH Malaria dataset from Kaggle
-and performing a stratified 70/15/15 split using splitfolders.
-"""
-
 import os
 import splitfolders
 

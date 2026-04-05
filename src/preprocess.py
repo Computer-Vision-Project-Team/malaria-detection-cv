@@ -1,9 +1,3 @@
-"""Preprocessing and data generator setup for malaria classification.
-
-Mirrors the notebook's ImageDataGenerator configuration with rescaling
-and OpenCV Gaussian Blur as the preprocessing function.
-"""
-
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from image_utils import apply_gaussian_blur
 

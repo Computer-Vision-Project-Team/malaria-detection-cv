@@ -2,7 +2,7 @@
 data/*
 !data/.gitkeep
 
-# Ignore large saved Keras models (share the .h5 file via Google Drive or Plymouth OneDrive instead)
+# Ignore large saved Keras models 
 *.h5
 *.keras
 !models/best_model.h5

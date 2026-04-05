@@ -1,5 +1,3 @@
-"""Utility helpers for training and evaluation scripts."""
-
 import os
 import random
 

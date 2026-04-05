@@ -1,9 +1,3 @@
-"""Evaluate a trained model on the unseen test split.
-
-Mirrors the notebook's evaluation cells: classification report, confusion matrix,
-and ROC curve generation.
-"""
-
 import os
 import numpy as np
 import matplotlib.pyplot as plt
