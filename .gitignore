@@ -5,6 +5,7 @@ data/*
 # Ignore large saved Keras models (share the .h5 file via Google Drive or Plymouth OneDrive instead)
 *.h5
 *.keras
+!models/best_model.h5
 
 # Ignore Mac/Windows system files
 .DS_Store
@@ -150,11 +151,15 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.venv312/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Generated evaluation artifacts
+confusion_matrix.png
 
 # Spyder project settings
 .spyderproject
