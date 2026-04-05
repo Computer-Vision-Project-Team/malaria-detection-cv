@@ -39,6 +39,7 @@ malaria-detection-cv/
 ├── requirements.txt        # Project dependencies
 └── README.md
 ```
+---
 
 ## Note on Model Weights (.h5 file)
 Due to GitHub file size limitations, the trained malaria_cnn.h5 model is not hosted in the GitHub repository.
@@ -47,41 +48,47 @@ If viewing on GitHub: The model weights and complete testing dataset have been s
 
 If viewing from the OneDrive submission: The model is already included in the models/ directory, and the app is ready to run.
 
+---
+
 ## Setup and Installation
+
 ### 1. Prerequisites
 Python 3.9 - 3.12 installed on your system.
 
 Windows Users - Long Path Fix (REQUIRED): Deep learning libraries have deeply nested folders that exceed the default Windows 260-character limit. Before installing, open Windows PowerShell as Administrator and run:
 
 Windows PowerShell as administrator
+```text
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1
-
+```
 ### 2. Installation Steps
 Clone or extract the project, then open your terminal in the root directory (malaria-detection-cv).
 
 ### Step 1: Create a virtual environment
 
-Bash
+```text
 python -m venv venv
+```
 
 ### Step 2: Activate the environment
-
+```text
 Windows: venv\Scripts\activate
-
+```
+```text
 Mac/Linux: source venv/bin/activate
-
+```
 ### Step 3: Install dependencies
 (Note: We utilize tensorflow-cpu and opencv-python-headless for a lightweight, optimized web deployment).
 
-Bash
+```text
 pip install -r requirements.txt
-
+```
 ### Running the Application
 Once dependencies are installed, launch the Streamlit dashboard by running:
 
-Bash
+```text
 streamlit run src/app.py
-
+```
 The application will open automatically in your default web browser at http://localhost:8501.
 
 ## Testing the Application
@@ -107,8 +114,11 @@ Developed collaboratively using GitHub for version control. Detailed individual 
 Training & Evaluation:
 You can retrain or evaluate the model using the scripts in the src/ folder:
 
-Bashpython src/train.py
+```text
+python src/train.py
+```
+```text
 python src/evaluate.py
-
+```
 ## Deployment on Streamlit Community Cloud (Future Work)
 The app is currently local-only. For cloud deployment, the model would need to be hosted externally due to size constraints.
